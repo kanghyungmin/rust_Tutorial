@@ -33,19 +33,10 @@
 // }
 // struct WriteMessage(String); // 튜플 구조체
 // struct ChangeColorMessage(i32, i32, i32); // 튜플 구조체
+fn main() {
+    let s1 = String::from("tic");
+    let s2 = String::from("tac");
+    let s3 = String::from("toe");
 
-enum Coin {
-    Penny, 
-    Nickel,
-    Dime,
-    Quarter,
-}
-
-fn value_in_cents(coin: Coin) -> u32 {
-    match coin {
-        Coin::Penny => 1, 
-        Coin::Nickel => 5, 
-        Coin::Dime => 10,
-        Coin::Quarter => 25,
-    }
+    let s = format!("{}-{}-{}", s1, s2, s3);
 }
